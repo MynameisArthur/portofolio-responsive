@@ -483,5 +483,48 @@ section:not(.hero) {
         width: 2rem;
         height: 2rem;
         border: 0.5rem solid var(--light-gray-color);
+        border-radius: 50%;
+        bottom: -2.5rem;
+        left: -1.2rem;
     }
+}
+.timeline-item {
+    background-color: var(--light-gray-color);
+    padding: 2.2rem;
+    margin-left: 3.5rem;
+    margin-bottom: 2rem;
+    position: relative;
+}
+.timeline-item {
+    &::before,
+    &::after {
+        content: '';
+        position: absolute;
+    }
+    &::before {
+        top: 0.5rem;
+        left: -2rem;
+        border: 1px solid transparent;
+        border-right-color: var(--light-gray-color);
+    }
+    &::after {
+        width: 3rem;
+        height: 3rem;
+        background-color: var(--light-gray-color);
+        border-radius: 50%;
+        top: -0.3rem;
+        left: -4.7rem;
+    }
+}
+.timeline-heading {
+    margin-bottom: 2rem;
+}
+.timeline-entry-name {
+    display: inline-block;
+    margin-right: 1rem;
+    font-size: 2rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: var(--dark-color);
+    text-transform: uppercase;
 }
