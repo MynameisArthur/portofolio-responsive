@@ -611,3 +611,56 @@ section:not(.hero) {
         padding: 1rem 5rem;
     }
 }
+//Contact styles
+.contact-info-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+.contact-info {
+    flex-basis: 45%;
+}
+.contact-info-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2.5rem;
+}
+.info-item-icon {
+    background-color: var(--light-gray-color);
+    display: flex;
+    width: 10rem;
+    font-size: 5rem;
+    color: var(--blue-color);
+    border-radius: 3px;
+    i {
+        margin: auto;
+    }
+}
+.data-wrapper {
+    margin-left: 2rem;
+}
+.info-item-data {
+    display: block;
+    font-size: 1.4rem;
+    line-height: 1.5;
+}
+.contact-form {
+    flex: 1;
+    input,
+    textarea {
+        width: 100%;
+        background-color: var(--light-gray-color);
+        font-family: var(--body-font-family);
+        color: var(--body-font-color);
+        font-size: 1.4rem;
+        letter-spacing: 1px;
+        border: none;
+        border-radius: 3px;
+        margin-bottom: 2rem;
+        padding: 1rem;
+    }
+    .btn {
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+}
